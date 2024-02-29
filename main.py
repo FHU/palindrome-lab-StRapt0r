@@ -1,7 +1,7 @@
 #REMOVE PASS AND FIX THIS FUNCTION
 def palindrome(word1):
     word1=word1.replace(" ","")
-    if word1 == " ":
+    if word1.isspace():
         return(False)
     word1 = word1.lower()
     x=-1
