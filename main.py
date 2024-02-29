@@ -1,15 +1,16 @@
 #REMOVE PASS AND FIX THIS FUNCTION
 def palindrome(word1):
-    if word1 == "":
+    word1=word1.replace(" ","")
+    if word1 == " ":
         return(False)
-    elif (word1.isspace()) == False:
-        word1.replace(" ","")
-    word1 = word1.lower
-    word2 = word1[::-1]
-    if word2==word1:
-        return(True)
-    else:
-        return(False)
+    word1 = word1.lower()
+    x=-1
+    for i in word1:
+        if i == word1[x]:
+            x-=1
+        else:
+            return(False)
+    return(True)
 
 
 
